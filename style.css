@@ -1,72 +1,119 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
 }
 
-.container{
+.hero{
     width: 100%;
     height: 100vh;
-    background-color: #42455a;
+    background-color: antiquewhite;
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
 }
 
-.menu ul{
-    display: inline-flex;
-    margin: 50px;
+
+.hero nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.menu ul li{
+.logo{
+    width: 40px;
+}
+
+nav ul li{
+    display: inline-block;
     list-style: none;
-    margin: 0 20px;
-    color: #b2b2b2;
-    cursor: pointer;
+    margin: 10px 15px;
 }
 
-.logo img{
-    width: 30px;
-    margin-top: -7px;
-    margin-right: 48px;
+nav p{
+    position: absolute;
+    left: 172px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: grey;
+    font-weight: 400;
+    position:relative;
+    right: 130px;
 }
 
-.active{
-    color: #19dafa;
-}
-
-.signup-btn{
+.prem-btn{
     top: 40px;
     right: 80px;
     position: absolute;
     text-decoration: none;
-    color: #fff;
+    color: black;
     border: 2px solid transparent;
     border-radius: 20px;
-    background-image: linear-gradient(#42455a,#42455a),radial-gradient(circle at top left,#fd00da,#19d7f8);
+    background-image: linear-gradient(white,white),radial-gradient(circle at top left,#fd00da,#19d7f8);
     background-origin: border-box;
     background-clip:content-box,border-box;
 }
 
-.signup-btn span{
+.prem-btn span{
     display: block;
     padding: 8px 22px;
 }
 
-.banner{
-    width: 80%;
-    height: 70%;
-    top: 25%;
-    left: 130px;
-    position:absolute;
-    color: #fff;
+.prem-btn{
+    text-align: center;
+    font-size: 13px;
 }
 
-.app-text{
-    width: 50%;
-    float: left;
-}
-
-.app-text h1{
-    font-size: 43px;
-    width: 640px;
+.container{
     position: relative;
-    margin-left: 40px;
+    top: 127px;
+    left: -210px;
+}
+
+
+
+.sign-inform{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 50vh;
+    background: cornsilk;
+    border-radius: 10px;   
+}
+
+.sign-inform{
+    display: inline;
+}
+
+.sign-inform h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.sign-inform img{
+    text-align: center;
+    display: flex;
+    width: 80px;
+}
+
+.sign-inform form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .text-field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.pass{
+    display: inline;
+    align-items: center;
 }
